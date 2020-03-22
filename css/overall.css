@@ -1,0 +1,83 @@
+/*
+
+Author: Austin Corteville
+Challenge: Portfolio
+Date (Start): 1/28/2020
+
+
+@refrences:
+
+https://www.w3schools.com/cssref/pr_pos_z-index.asp (keep nav bar in front)
+
+https://stackoverflow.com/questions/14390979/how-do-i-keep-a-nav-bar-at-the-top-of-the-page (nav bar at top)
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
+/*
+google fonts
+*/
+
+body{
+    background-color: #5C5959;
+    font-family: 'Tomorrow', monospace, sans-serif;
+    color: blanchedalmond;
+}
+
+.scrollbar::-webkit-scrollbar{
+    display: none;
+}
+
+nav{
+    width: 100%;
+    border-color: #411A1A;
+    border-width: thick;
+    border-style: groove;
+    background-color: blanchedalmond;
+    top:0;
+    left: 0;
+    margin: 0 auto;
+    padding: 5px;
+    height: 50px;
+    position: sticky;
+    overflow: auto;
+    z-index: 100;
+    box-shadow: -10px 10px #411A1A;
+}
+
+button{
+    color: blanchedalmond;
+    background-color: #411A1A;
+    border-style: outset;
+    border-width: medium;
+    border-color: black;
+}
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: #411A1A;
+    color: blanchedalmond;
+    border-radius: 10px;
+    box-shadow: -10px -10px, 10px inset #411A1A;
+}
+
+a:visited{
+    background-color: #938C8C;
+    color: #411A1A;
+    border-radius: 10px;
+    box-shadow: -10px 10px, 10px inset #938C8C;
+}
+
+.name{
+    margin: 10px;
+    font-size: 30px;
+    color: #411A1A;
+    font-family: inherit;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}

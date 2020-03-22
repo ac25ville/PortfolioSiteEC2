@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Name: Austin Corteville
+    Pawprint: acc9cm
+    Date: 2/28/2020
+    Challenge: To Do List
+
+    @refrences:
+    
+    -->
+<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="../../css/projectsPagesCss/toDoList.css">
+<title>To Do List</title>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    
+    <script>
+        
+        $(function(){
+            var colorSwitch = true; //true means dark mode
+            $("#color_mode").click(function(){
+                if(colorSwitch){
+                    $("body")
+                        .css("background-color", "blanchedalmond")
+                        .css("color", "#411A1A");
+                    $(".title_wrap, .content_wrap, .form_wrap")
+                        .css("border-color", "#411A1A");
+                    $("nav")
+                        .css("background-color", "#5C5959")
+                        .css("color", "blanchedalmond");
+                    //Button Inversion
+                    $("button")
+                        .css("background-color", "#5C5959")
+                        .css("color", "#411A1A");
+                    $(this)
+                        .html("Light Mode");
+                    colorSwitch = false;
+                }else{
+                    //Body Correction
+                    $("body")
+                        .css("background-color", "#5C5959")
+                        .css("color", "blanchedalmond");
+                    //NavBar Correction
+                    $("nav")
+                        .css("background-color", "blanchedalmond")
+                        .css("color", "#411A1A");
+                    //Div Correction
+                    $(".title_wrap, .content_wrap, .form_wrap")
+                        .css("border-color", "blanchedalmond");
+                    
+                    //Button Correction
+                    $("button")
+                        .css("background-color", "#411A1A")
+                        .css("color", "blanchedalmond");
+                    $(this)
+                        .html("Dark Mode");
+                    colorSwitch = true;
+                }
+            });
+            
+            $("#itemAdd").click(function(){
+              $("table tbody").append(
+              "<tr>"+
+                "<td>" + $("#itemName").val() + "</td>" +
+                "<td>" + $("#itemType").val() + "</td>" +
+                "<td>" + $("#itemDueDate").val() + "</td>" +
+//                "<td>" + "<input type=""checkbox"">" + "</td>" +
+//                "<td>" + "<button id=""listItem"">" + "" + "</button>" + "</td>" +
+              "</tr>"
+              );
+                
+            });
+            
+            $("#listItem").click(function(){
+                $(this).html(null);
+            })
+            
+            $("#clearList").click(function(){
+               $("tbody").html(null); 
+            });
+        });
+    </script>
+    
+</head>
+<body>
+
+    <nav>
+        <a href="../projects.html" class="name">Projects</a>
+    </nav>
+    
+    <div class="main_wrap">
+        
+        <div class="title_wrap">
+            <h1> To-Do List </h1>
+            
+            <button id="color_mode">Dark Mode</button>
+        </div>
+        
+        <div class="content_wrap">
+            <table class="table">
+                <thead>
+                <tr>
+                    <td>Title</td>
+                    <td>Type</td>
+                    <td>Date</td>
+                    <td>Action</td>
+                    <td></td>
+                </tr>
+                </thead>
+                <tbody>
+    
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="form_wrap">
+            <form>
+                <div>
+                <label>Item Name</label>
+                <input type="text" id="itemName" name="itemName" placeholder="To-Do List Item">
+                </div>
+                
+                <div>
+                <label>Item Type</label>
+                <select id="itemType" name="itemType">
+                    <option value=" " label=" "></option>
+                    <option value="Homework">Homework</option>
+                    <option value="Appointment">Appointment</option>
+                    <option value="Self Care">Self Care</option>
+                </select>
+                </div>
+                
+                <div>
+                <label>Item Due Date</label>
+                <input type="date" id="itemDueDate" name="itemDueDate">
+                </div>
+                    
+                <label><button id="itemAdd">Add Item</button></label>
+                <label><button id="clearList">Clear To-Do List</button></label>
+            </form>
+        </div>
+    
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+Name: Austin Corteville
+Pawprint: Acc9cm
+Date: 4 February 2020
+Challenge 3: Multi-Column Layout
+
+@refrences
+
+base html code is from the starter we were given
+-->
+<html lang="en">
+    
+    <head>
+        <title>Skills</title>
+        <link rel="stylesheet" type="text/css" href="../css/skills.css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <body class="scrollbar">
+        <!-- Main wrapper. This div should wrap all columns, row wrapper, and title header -->
+        <nav class="scrollbar">
+            <a class="name" href="../index.html">Austin Corteville</a>
+            <a class="name" href="skills.html">Skills</a> 
+            <a class="name" href="classes_Taken.html">Classes Taken</a>
+            <a class="name" href="projects.html">Projects</a>
+        </nav>
+        <div class="main_wrap clearfix">
+            <h1> Skills </h1>
+            <!-- Left Column -->
+            <!-- Put left column physical width calculations here: 
+                Content-Width: 241px +
+                Margin: 40px (20*2) +
+                Padding: 40px (20*2) +
+                Border-Width: 16px (8*2) +
+                *********************************
+                337px of total width;
+
+            -->
+            <div class="left_wrap wrap_inherit">
+                <div class="section_title">
+                    <h2> Languages </h2>
+                </div>
+                <ul>
+                    <li>C/C#</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>HTML/CSS</li>
+                </ul>
+            </div>
+            
+            <!-- Row Wrapper. This div will contain two rows -->
+            <!--Put middle column physical width calculations here:
+                width: 428px +
+                margin: 40px (20*2) +
+                *********************************
+                468px total width;
+            -->
+            
+            <div class="row_wrap">
+                <div class="row_top">
+                <div class="section_title">
+                    <h2> Coursework </h2>
+                </div>
+                <ul>
+                    <li>Advanced Algorithim Design</li>
+                    <li>Programming I/II</li>
+                    <li>Web Development</li>
+                    <li>Object Oriented Programming</li>
+                    <li>Calc I/II/III</li>
+                </ul>
+                </div>
+                
+                <div class="row_bottom">
+                <div class="section_title">
+                    <h2> Other </h2>
+                </div>
+                <ul>
+                    <li>External Vice Chief Engineer</li>
+                    <li>Accreditation Chairman</li>
+                </ul>
+                </div>
+            </div>
+            
+            <!-- Right Column -->
+            <!--Put right column physical width calculations here: 
+                Width: x +
+                Margin: 40px (20*2) +
+                Padding: 40px (20*2) +
+                Border-Width: 16px (8*2) +
+                *********************************
+                x = 1101 - (96+468+337)
+                *********************************
+                x=200px
+                Total Width of element: 296 px;
+                
+            -->
+            <div class="right_wrap wrap_inherit">
+                <div class="section_title">
+                    <h2>Technologies</h2>
+                </div>
+                 
+<!--                make these divs then sticky so they stay at the top no matter where it scrolls-->
+                <ul>
+                    <li>Git/Github <span class="beginner">Beginner</span></li>
+                    <li>Social Media Managment</li>
+                    <li>Linux Terminal/Windows Powershell <span class="beginner">Beginner</span></li>
+                </ul>
+            </div>
+            
+        </div>
+        <p>Last Updated: 02/06/2020</p>
+    </body>
+</html>

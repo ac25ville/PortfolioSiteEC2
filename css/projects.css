@@ -1,0 +1,77 @@
+/*
+Author: Austin Corteville
+Challenge: Projects
+Date: 02/22/2020
+
+
+@refrences
+https://www.geeksforgeeks.org/css-flex-wrap-property/
+
+
+*/
+
+@import url("overall.css");
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+/*
+google fonts
+*/
+
+.main_wrap{
+    flex-wrap: wrap-reverse;
+    width: 90%;
+    position: relative;
+    margin: auto;
+    margin-top: 75px;
+    display:flex;
+}
+
+.card{
+    border-width: 4px;
+    border-style:outset;
+    border-color: #411A1A;
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+    background-color: lightgray;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px #411A1A;
+}
+
+.card_image{
+    width: 40%;
+    height: 100%;
+    border-right-width: 10px;
+    border-right-style: double;
+    border-right-color: #411A1A;
+    float:left;
+}
+
+.card_content{
+    width: 60%;
+    color: #411A1A;
+    display:inline;
+    text-align: center;
+    font-size: 18px;
+}
+.card_title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: auto;
+    font-size: 22px;
+    font-family: 'Titillium Web', monospace, sans-serif;
+    display: block;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.card_link{
+    text-align: center;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    color: #411A1A;
+}

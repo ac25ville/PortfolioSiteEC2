@@ -1,0 +1,108 @@
+/*
+Author: Austin Corteville
+Challenge: Columns
+Date: 02/06/2020
+
+
+@refrences
+
+https://www.w3schools.com/howto/howto_css_clearfix.asp (clearfix)
+
+https://stackoverflow.com/questions/6382023/changing-the-color-of-an-hr-element (hr color)
+
+https://stackoverflow.com/questions/5135019/css-opacity-only-to-background-color-not-the-text-on-it (rgba)
+*/
+
+@import url("overall.css");
+
+.main_wrap{
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 1101px;
+    border-style: groove;
+    border-color: #411A1A;
+    border-width: 6px;
+    border-radius: 10px;
+    background-color: rgba(255,235,205, 25%);
+    padding: 8px;
+    
+    
+    overflow: auto;
+}
+
+.section_title{
+    border-bottom: thick ridge blanchedalmond;
+/*    z-index: 5;*/
+}
+
+h1, h2{
+    text-align: center;
+    color: #411A1A;
+}
+
+div.section_title h2{
+    display: block;
+}
+
+.wrap_inherit{
+    height: 390px;
+    margin: 20px;
+    padding: 20px;
+    border-width: 8px;
+    border-radius: 5px;
+    border-style: groove;
+    border-color: blanchedalmond;
+    float: left;
+    background-color: #938C8C;
+    color: #411A1A;
+    overflow: inherit;
+}
+
+.left_wrap{
+    width: 241px;
+}
+
+.right_wrap{
+    width: 200px;
+}
+
+.row_wrap{
+    width: 428px;
+    margin: 20px;
+    float: left;
+    color: #411A1A;
+}
+
+.row_top{
+    width: 372px;
+    height: 190px;
+    padding: 20px;
+    border-style: groove;
+    border-width: 8px;
+    border-color: blanchedalmond;
+    border-radius: 5px;
+    background-color: #938C8C;
+    overflow: auto;
+}
+
+.row_bottom{
+    width: 372px;
+    height: 120px;
+    padding: 20px;
+    border-style: groove;
+    border-width: 8px;
+    border-color: blanchedalmond;
+    border-radius: 5px;
+    margin-top: 25px;
+    background-color: #938C8C;
+    overflow: auto;
+}
+
+ul li{
+    padding: 10px;
+}
+
+.beginner{
+    font-style: italic;
+}

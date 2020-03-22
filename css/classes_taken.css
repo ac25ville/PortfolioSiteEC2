@@ -1,0 +1,108 @@
+/*
+Author: Austin Corteville
+Challenge: Columns
+Date: 02/14/2020
+
+
+@refrences
+
+https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+(box-shadow)
+
+*/
+
+@import url('overall.css');
+
+/*
+
+Table
+
+*/
+
+.table_title{
+    text-align: center;
+    font-size: 28px;
+    background-color: #411A1A;
+    padding: 0;
+}
+
+nav{
+    height: 60px;
+}
+
+.tiger{
+    width 150px;
+    position:relative;
+    box-shadow: 5px 5px;
+}
+
+.table_addon, td, th, tr{
+}
+
+th{
+    font-size: 24px;
+}
+
+#cs{
+    background-color:#411A1A;
+}
+
+#psych{
+    background-color: darkgreen;
+}
+
+#math{
+    background-color: blanchedalmond;
+    color: #411A1A;
+}
+
+/*
+
+CSS card
+
+*/
+
+.card-wrap{
+    
+    width: 50%;
+    position: relative;
+    margin: auto;
+    
+    background-color: blanchedalmond;
+    color: #411A1A;
+    
+    border-width: medium;
+    border-color: #411A1A;
+    border-style: groove;
+    border-radius: 10px;
+    
+    box-shadow: 10px 10px;
+    
+    overflow:auto;
+    
+}
+
+.col-one{
+    width: 30%;
+    display: inline-block;
+}
+
+.profile-image{
+    margin: 10px;
+    width: 90%;
+    border-width:medium;
+    border-style:double;
+    border-color: #411A1A;
+}
+
+.col-two{
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+}
+
+.col-three{
+    width: 38%;
+    display: inline-block;
+    text-align: center;
+}

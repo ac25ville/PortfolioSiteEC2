@@ -1,0 +1,58 @@
+/*
+
+Author: Austin Corteville
+Challenge: Portfolio
+Date (Start): 1/28/2020
+
+@refrences:
+
+*/
+
+@import url("../overall.css");
+
+
+.main_wrap{
+    display: block;
+    margin: auto;
+    margin-top: 70px;
+    width: 70%;
+    text-align: center;
+    padding: 15px;
+}
+
+.title_wrap{
+    border-color: blanchedalmond;
+    border-width: medium;
+    border-style: groove;
+    padding: 15px;
+}
+
+.content_wrap{
+    border-color: blanchedalmond;
+    border-width: medium;
+    border-style: groove;
+}
+
+.form_wrap{
+    border-color: blanchedalmond;
+    border-width: medium;
+    border-style: groove;
+    padding: 15px;
+}
+
+label{
+    padding: 15px;
+}
+
+form div{
+    float: left;
+}
+
+form{
+    display: block;
+    padding: 5%;
+}
+
+thead{
+    font-size: 22px;
+}
