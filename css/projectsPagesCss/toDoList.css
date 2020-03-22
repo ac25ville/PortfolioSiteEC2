@@ -10,6 +10,9 @@ Date (Start): 1/28/2020
 
 @import url("../overall.css");
 
+nav{
+    height: 60px;
+}
 
 .main_wrap{
     display: block;
