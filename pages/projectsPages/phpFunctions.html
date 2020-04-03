@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Name: Austin Corteville
+    Pawprint: acc9cm
+    Date: 1/27/2020
+    Challenge: PHP
+
+    @refrences:
+    [ .attr() ]
+    https://api.jquery.com/attr/
+    [ option:selected ]
+    https://api.jquery.com/selected-selector/
+    -->
+<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="../../css/projectsPagesCss/php.css">
+<title>PHP Functions</title>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="../../script/js_jquery/phpFuncts.js" type="text/javascript"></script>
+</head>
+<body>
+    
+    <div id = "main_wrap">
+        <div id="main_wrap_title">
+            <h2>PHP Function Display</h2>
+        </div>
+        
+        <div id="form_wrap">
+            <div id="function_select_div">
+                <form action="#" method="get">
+                    <label for="function_select">
+                        Function Select:
+                    </label>
+                    <select id="function_select" name="func_select">
+                        <option value="none" selected>Choose a Function</option>
+                        <option value="greeting">Greeting</option>
+                        <option value="factorial">Factorial</option>
+                        <option value="reverse_string">Reverse String</option>
+                        <option value="sum_of_squares">Sum of Squares</option>
+                    </select>
+                    
+                    <button type="button" id="form_submit">Select</button>
+                </form>
+            </div>
+            
+            <div id="form_display_div">
+                <p id="function_name">Functions and their Name will appear here</p>
+                
+                <form id="function_form" action="" method="GET" target="_blank">
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

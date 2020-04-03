@@ -1,0 +1,71 @@
+/*
+
+Author: Austin Corteville
+Challenge: toDoList
+Date (Start): 1/28/2020
+
+@refrences:
+
+(text-shadow)
+https://www.w3schools.com/cssref/css3_pr_text-shadow.asp
+
+*/
+
+@import url("../overall.css");
+
+#main_wrap{
+    margin: 0 auto;
+    width: 70%;
+    height: 65vh;
+    background-color: #938C8C;
+    border: thick groove blanchedalmond;
+    padding: 15px;
+}
+
+#main_wrap_title{
+    margin: 0 auto 10px;
+    text-align: center;
+    border: medium double #411A1A;
+    background-color: blanchedalmond;
+    color: #411A1A;
+    text-shadow: 2px 2px 2px #411A1A;
+}
+
+#form_wrap{
+    margin: 0 auto 10px;
+    padding: 10px;
+    border: medium double #411A1A;
+    background-color: blanchedalmond;
+    color: #411A1A;
+}
+
+#function_select_div{
+    margin: 0 auto 10px;
+    padding: 10px;
+    border: medium dotted #411A1A;
+    background-color: blanchedalmond;
+    color: #411A1A;
+    text-align: center;
+}
+
+#form_display_div{
+    margin: 0 auto 10px;
+    border: medium dotted #411A1A;
+    background-color: blanchedalmond;
+    color: #411A1A;
+    text-align: center;
+}
+
+#function_name{
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#function_form{
+    margin: 0 auto 10px;
+}
+
+#function_form_clear{
+    margin-top: 10px;
+}
