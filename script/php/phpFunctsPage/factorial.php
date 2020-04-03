@@ -1,6 +1,6 @@
 <?php
     function factorial($a){
-        if(gettype($a)!="integer"){
+        if(!is_int($a)){
             echo "Enter an Integer Value!";
                 return;
         }else if($a==0){
