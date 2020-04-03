@@ -13,7 +13,7 @@ $(function(){
                     $("#function_form")
                     .attr("method", "POST");
                     $("#function_form")
-                    .attr("action", "../../php/phpFunctsPage/greeting.php");
+                    .attr("action", "../../script/php/phpFunctsPage/greeting.php");
                     //add another attr() to chain the change for the action
                 }else if(selectedValue.val() === "factorial"){
                     changeFormTitle();
