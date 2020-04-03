@@ -7,6 +7,5 @@
         }
     }
     echo $_GET['factorial_value'];
-    $temp = factorial($_GET['factorial_value']);
-    echo factorial();
+//    $temp = factorial($_GET['factorial_value']);
 ?>
