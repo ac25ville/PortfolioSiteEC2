@@ -18,7 +18,10 @@ $(function(){
                 }else if(selectedValue.val() === "factorial"){
                     changeFormTitle();
                     $("#function_form").html("<label for='factorial_value'>Integer: </label><br><input type = 'text' id='factorial_value' name='factorial_value'><br><input type='submit'><br><input type='reset'>");
-                    $("#function_form").attr("method", "GET");
+                    $("#function_form")
+                    .attr("method", "GET");
+                    $("#function_form")
+                    .attr("action", "../../script/php/phpFunctsPage/factorial.php");
                 }else if(selectedValue.val() === "reverse_string"){
                     changeFormTitle();
                     $("#function_form").html("<label for='string_to_reverse'>String to Reverse:</label><br><input type='text' id='string_to_reverse' name='string_to_reverse'><br><input type='submit'><br><input type='reset'>");
