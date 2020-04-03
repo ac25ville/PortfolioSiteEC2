@@ -3,7 +3,7 @@
         if($a==0){
             return 1;
         }else{
-            return factorial($a--)*$a;
+            return factorial($a-1)*$a;
         }
     }
     echo $_GET['factorial_value'];
