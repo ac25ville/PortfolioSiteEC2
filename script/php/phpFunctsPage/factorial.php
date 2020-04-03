@@ -1,8 +1,8 @@
 <?php
+    echo gettype($_GET['factorial_value']);
     function factorial($a){
         if(!is_int($a)){
-            echo "Enter an Integer Value!";
-                return;
+            return "Enter an Integer Value";
         }else if($a==0){
             return 1;
         }else{
