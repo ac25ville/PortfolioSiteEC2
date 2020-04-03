@@ -1,5 +1,4 @@
 <?php
-    echo gettype($_GET['factorial_value']);
     function factorial($a){
         if($a==0){
             return 1;
@@ -7,6 +6,7 @@
             return factorial($a--)*$a;
         }
     }
-
-    echo factorial($_GET['factorial_value']);
+    echo $_GET['factorial_value'];
+    $temp = factorial($_GET['factorial_value']);
+    echo factorial();
 ?>
