@@ -17,7 +17,7 @@ $(function(){
                     //add another attr() to chain the change for the action
                 }else if(selectedValue.val() === "factorial"){
                     changeFormTitle();
-                    $("#function_form").html("<label for='factorial_value'>Integer: </label><br><input type = 'text' id='factorial_value' name='factorial_value'><br><input type='submit'><br><input type='reset'>");
+                    $("#function_form").html("<label for='factorial_value'>Integer: </label><br><input type = 'number' id='factorial_value' name='factorial_value'><br><input type='submit'><br><input type='reset'>");
                     $("#function_form")
                     .attr("method", "GET");
                     $("#function_form")
@@ -28,7 +28,7 @@ $(function(){
                     $("#function_form").attr("method", "GET");
                 }else if(selectedValue.val() === "sum_of_squares"){
                     changeFormTitle();
-                    $("#function_form").html("<label for='larger_int'>Larger Integer</label> <input type='text' id='larger_int' name='larger_int'><br><label for='smaller_int'>Smaller Integer</label><input type='text' id='smaller_int' name='smaller_int'><br><input type='submit'><br><input type='reset'>");
+                    $("#function_form").html("<label for='larger_int'>Larger Integer</label> <input type='number' id='larger_int' name='larger_int'><br><label for='smaller_int'>Smaller Integer</label><input type='number' id='smaller_int' name='smaller_int'><br><input type='submit'><br><input type='reset'>");
                     $("#function_form").attr("method", "GET");
                 }else{
                     $("#function_name").html(selectedValue.html() + " to Display");
