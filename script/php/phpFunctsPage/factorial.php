@@ -6,7 +6,6 @@
             return factorial($a-1)*$a;
         }
     }
-    echo $_GET['factorial_value'];
     $temp = factorial($_GET['factorial_value']);
     echo $temp;
 ?>
