@@ -1,12 +1,12 @@
 <?php
-    function factorial(var a){
-        if(gettype(a)!="integer"){
+    function factorial($a){
+        if(gettype($a)!="integer"){
             echo "Enter an Integer Value!"
                 return;
-        }else if(a==0){
+        }else if($a==0){
             return 1;
         }else{
-            return factorial(a--)*a;
+            return factorial($a--)*$a;
         }
     }
 
