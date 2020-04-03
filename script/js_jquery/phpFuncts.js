@@ -9,7 +9,7 @@ $(function(){
                 selectedValue = $("#function_select option:selected");
                 if(selectedValue.val() === "greeting"){//when php comes around need to change action and method to fit each requriement, using .attr();
                     changeFormTitle();
-                    $("#function_form").html("<label for='firstName'>First Name:</label> <input type='text' id='firstName' name='lastName'><br><label for='lastName'>Last Name:</label> <input type='text' id='lastName' name='lastName'><br><input type='submit'><br><input type='reset'>");
+                    $("#function_form").html("<label for='firstName'>First Name:</label> <input type='text' id='firstName' name='firstName'><br><label for='lastName'>Last Name:</label> <input type='text' id='lastName' name='lastName'><br><input type='submit'><br><input type='reset'>");
                     $("#function_form")
                     .attr("method", "POST");
                     $("#function_form")
