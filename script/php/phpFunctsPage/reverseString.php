@@ -1,17 +1,8 @@
 <?php
-//    function reverseString($s){
-//        $temp="";
-//        for($i = strlen(s)-1; $i<strlen(s); $i++)
-//        {
-//            temp.=
-//        }
-//    }
-//
-//    $temp = $_GET['string_to_reverse'];
-//    echo reverseString($temp);
+//@refrences https://www.javatpoint.com/php-reverse-string [ strrev(); ]
     function reverseString($s)
     {
         return strrev($s);
     }
-    echo reverseString($_GET['string_to_reverse']);
+    echo "The reverse of ".$_GET['string_to_reverse']." is ". reverseString($_GET['string_to_reverse']);
 ?>
