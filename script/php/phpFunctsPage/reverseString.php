@@ -1,10 +1,17 @@
 <?php
-    function reverseString($s){
-        
+//    function reverseString($s){
+//        $temp="";
+//        for($i = strlen(s)-1; $i<strlen(s); $i++)
+//        {
+//            temp.=
+//        }
+//    }
+//
+//    $temp = $_GET['string_to_reverse'];
+//    echo reverseString($temp);
+    function reverseString($s)
+    {
+        return strrev($s);
     }
-
-    $temp = $_GET['string_to_reverse'];
-    $temp .= "\0";
-    echo $temp;
     echo reverseString($_GET['string_to_reverse']);
 ?>
