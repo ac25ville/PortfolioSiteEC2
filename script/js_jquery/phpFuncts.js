@@ -14,7 +14,6 @@ $(function(){
                     .attr("method", "POST");
                     $("#function_form")
                     .attr("action", "../../script/php/phpFunctsPage/greeting.php");
-                    //add another attr() to chain the change for the action
                 }else if(selectedValue.val() === "factorial"){
                     changeFormTitle();
                     $("#function_form").html("<label for='factorial_value'>Integer: </label><br><input type = 'number' id='factorial_value' name='factorial_value'><br><input type='submit'><br><input type='reset'>");
@@ -25,7 +24,10 @@ $(function(){
                 }else if(selectedValue.val() === "reverse_string"){
                     changeFormTitle();
                     $("#function_form").html("<label for='string_to_reverse'>String to Reverse:</label><br><input type='text' id='string_to_reverse' name='string_to_reverse'><br><input type='submit'><br><input type='reset'>");
-                    $("#function_form").attr("method", "GET");
+                    $("#function_form")
+                    .attr("method", "GET");
+                    $("#function_form")
+                    .attr("action", "../../script/php/phpFunctsPage/reverseString.php");
                 }else if(selectedValue.val() === "sum_of_squares"){
                     changeFormTitle();
                     $("#function_form").html("<label for='larger_int'>Larger Integer</label> <input type='number' id='larger_int' name='larger_int'><br><label for='smaller_int'>Smaller Integer</label><input type='number' id='smaller_int' name='smaller_int'><br><input type='submit'><br><input type='reset'>");
