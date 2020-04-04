@@ -3,12 +3,11 @@
         if($a>$b){
             $temp=0;
             
-            for($i = $b; $i<=$a; $i= $i+1)
-            {
-                $temp= $temp+(i*i);
+            for($i = $b; $i<=$a; $i++){
+                $temp+= $i*$i;
             }
                 return $temp;
         }else if($a==$b){
             return "The sum of squares of these two numbers is 0";}else{return "Please make sure the Larger Integer box is a *larger integer* than the smaller integer";}
-    }echo "The sum of squares between ".$_GET['smaller_int']."and".$_GET['larger_int']." is ".sumOfSquares($_GET['larger_int'], $_GET['smaller_int']);
+    }echo "The sum of squares between ".$_GET['smaller_int']." and ".$_GET['larger_int']." is ".sumOfSquares($_GET['larger_int'], $_GET['smaller_int']);
 ?>
