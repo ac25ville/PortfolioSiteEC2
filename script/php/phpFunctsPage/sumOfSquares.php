@@ -3,7 +3,7 @@
         if($a>$b){
             $temp=0;
             
-            for($i = $b; $i<=$a; $i+= $i+1)
+            for($i = $b; $i<=$a; $i= $i+1)
             {
                 $temp= $temp+(i*i);
             }
