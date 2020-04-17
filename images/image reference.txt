@@ -19,3 +19,6 @@ php:
 https://www.google.com/url?sa=i&url=https%3A%2F%2Fhackr.io%2Ftutorials%2Flearn-php&psig=AOvVaw1VxmdLYAA6zdrxwYxBYpCB&ust=1586021715447000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPijrr3lzOgCFQAAAAAdAAAAABAD
 
 
+computer:
+
+https://lh3.googleusercontent.com/proxy/KwagHiwRLs9lR8GktXe0xsV62-aLZxkAvsQW-FhsIDHCkgu9zn5RcFc2lr6LMGKi0wh7dnXvVmrqGcnHtuj4qhWQN_APDAFWLUZw2JcnbjhesJmyKqKIMDTFEi8iKSDAYDB2oqknx4Q9N5Z3YTlcPlJNimLTWnE3kruYQOjNlqO-isFhG9DSojYHoX5WGs3yL6JwuBLazu8a3Iu2Q3qCeoF7NrL_1w

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Name: Austin Corteville
+    Pawprint: acc9cm
+    Date: 4/15/2020
+    Challenge: Class Info
+
+    @refrences:
+    XML
+    https://www.w3schools.com/xml/ajax_xmlfile.asp
+    
+    -->
+<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="../../css/projectsPagesCss/class_info.css">
+<title>Web Dev Information</title>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="../../script/js_jquery/class_info.js"></script>
+</head>
+<body onload="getAssign()">
+    <nav>
+        <a href="../projects.html" class="name text-decoration-none">Projects</a>
+    </nav>
+    <div id="main_wrap">
+        <h1>CS/IT 2830 Dashboard</h1>
+        <p id="info_result"></p>
+        <div class="upper_wrapper">
+        <div class="upper_box">
+            <h5>Current Assignment:</h5>
+            <p id="current_result"></p>
+        </div>
+        <div class="upper_box">
+            <h5>Class Type:</h5>
+            <p id="type_result"></p>
+        </div>
+        </div>
+        <div id="office_hour_info">
+            <h5>Office Hour Info:</h5>
+            <ul id="day_choice" class="clearfix">
+            </ul>
+            <p id="office_hour_result">
+            </p>
+        </div>
+    </div>
+ 
+</body>
+</html>
